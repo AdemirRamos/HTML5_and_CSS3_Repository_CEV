@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Textos</title>
+
+    <style>
+
+        mark {background-color: lime;}
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Principais Formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p><b>Isto está em negrito!</b> Já o resto do parágrafo, não.</p>
+    <p>Nesta frase, temos um <b>termo em negrito</b> usando a "tag b" (não semântica).</p>
+    <!--A maneira acima de se usar o negrito não é semântica. Essa maneira só leva a forma e nada de semântica.-->
+    <p>Nesta frase, temos um <strong>termo em destaque usando a "tag strong" (pois ela é semântica).</strong></p>
+
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase, temos um termo <i>em Itálico</i> usando a "tag I" (uma "tag" não semântica).</p>
+    <!--Segure ctrl + shift + p e selecione a opção que menciona "envelope com abreviação". | Correção: esse termo não está mais disponível. Agora está função se chama "quebrar linha com abreviação." (...) Esse comando foi aplicado na linha de código abaixo. Caso essa opção não apareça logo de cara, digite "abb" para vê-la.-->
+    <p>Nesta frase, temos um termo <EM>com ênfase</EM> usando a "tag EM" (semântica).</p>
+    <!--A "tag EM (seja em maiúscula ou minúscla) é a função itálica com semântica."-->
+
+    <!--A partir daqui, temos o conteúdo do capítulo 08, aula 03 (Ex008.1).-->
+    
+    <h2>Texto Marcado</h2>
+    <p>Podemos, também, criar um <mark style="background-color: lime;">texto marcado</mark> usando a "tag MARK".</p>
+    <!--Em HTML não é possível alterar cores uma vez que cor é forma e não significado. Isso só é possível ser feito em CSS.-->
+    <!--A cor selecionada na "tag mark" acima só será aplicada naquela "tag". Outras "tags mark" terão a sua cor original (amarelo) preservada.-->
+    <!--Acima eu tenho uma "tag style" através da qual eu mudei a cor de todas as minhas "tags mark".-->
+    <!--A configuração da "tag mark" feita aqui é "inline" (só vai valer para esse trecho do documento).-->
+    <!--Para se ter uma marcação que valha para o documento inteiro, basta fazer a alteração no campo "style".-->
+    <p>E, no outro parágrafo, temos <mark>outro texto marcado</mark> no final.</p>
+
+    <h2>Texto Grande e Pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> neste parágrafo.</p>
+    <!--Lembrete: a "tag big" já é uma "tag" obsoleta. Já a "tag small" ainda não ficou obsoleta. - Vale lembrar que, mesmo que a "tag" esteja obsoleta, ela ainda pode funcionar.-->
+
+    <h2>Texto Deletado</h2>
+    <p>Podemos marcar um <del>texto como excluído</del> para indicar que ele deve ser lido, mas não considerado.</p>
+    <h2>Texto Inserido</h2>
+    <p>Podemos marcar um <ins>texo como inserido</ins> para dar ênfase e indicar que ele foi adicionado depois.</p>
+    <p>Existem também o <u>sublinhado com a "tag u"</u> (não semântica).</p>
+    <!--A "tag u" não é semântica; a "tag ins" é semântica; a "tag del" é semântica.-->
+
+    <h2>Texto Sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>20</sup>+3.</p>
+    <h2>Texto Subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>0.</p>
+    <!--Ambas as "tags" usadas acima são semânticas.-->
+
+</body>
+
+</html>

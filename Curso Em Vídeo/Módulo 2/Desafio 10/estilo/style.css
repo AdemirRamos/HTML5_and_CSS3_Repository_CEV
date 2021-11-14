@@ -1,0 +1,266 @@
+@charset "UTF-8";
+
+/*Palheta monocromática; cor principal: #3DDC84.*/
+
+/*Cores do projeto: 1ª: #c5ebd6; 2ª: #83e1ad; 3ª: #3ddc84; 4ª: #2fa866; 5ª: #1a5c37; 6ª: #063d1e.*/
+
+/*Pelo menos para esse projeto, a aplicação de fonte externas não funciona nesse documento CSS à parte. A configuração só funciona se feita na página principal do documento (dentro de uma "tag style").*/
+
+/*ATUALIZAÇÃO: para fazer as fontes funcionarem (a partir desse documento CSS à parte), é preciso se utilizar "../" antes do nome da pasta que contem os arquivos de fonte.*/
+
+@font-face {
+    font-family: 'God of War';
+    src: url('../fontes/GODOFWAR.TTF') format('opentype'), url('../fontes/GODOFWAR.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'Idroid';
+    src: url('../fontes/idroid.otf') format('opentype'), url('../fontes/idroid.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Bebas';
+    src: url('../fontes/Bebas-Regular.ttf') format('opentype'), url('../fontes/Bebas-Regular.ttf') format('truetype');
+}
+
+/*"./": pasta atual; "../": volte uma pasta e abra a outra pasta.*/
+
+:root {
+    /*Aqui é possível se criar variáveis que podem ser aplicadas em qualquer lugar do meu documento.*/
+    /*":root {}" é uma pseudo-classe.*/
+    /*":root {}" é a raiz da árvore do nosso documento.*/
+    /*Toda variável, em CSS, deve começar com dois traços (--).*/
+    /*A vantagem de se usar essas variáveis é que, ao se mudar uma cor (dentro de uma variável), essa alteração se dará em todo lugar onde a cor referida foi aplicada.*/
+
+    --cor_0: #c5ebd6;
+    --cor_1: #83e1ad;
+    --cor_2: #3ddc84;
+    --cor_3: #2fa866;
+    --cor_4: #1a5c37;
+    --cor_5: #063d1e;
+    --cor_6: #ebe5c5;
+    --fonte_padrão: Arial, Verdana, Helvetica, sans-serif;
+    --fonte_de_destaque_1: 'Idroid', 'cursive';
+    --fonte_de_destaque_2: 'Bebas', 'cursive';
+    --fonte_de_destaque_3: 'God of War', 'cursive';
+}
+
+/*Como selecionar todas os elementos:*/
+/*jeito difícil: p, h1, h2, h3*/
+/*Jeito fácil:*/
+
+* {
+    /*Todos os elementos abaixo serão selecionados.*/
+    /*O nome dessa ferramenta é "configuração global".*/
+    margin: 0px;
+    padding: 0px;
+}
+
+h1, h2, h3 {
+    font-family: 'Idroid', 'cursive';
+    /*color: var(--cor_5);*/
+    /*Decidi remover essa configuração (acima) pois o Guanabara vai mudar as cores dos títulos.*/
+}
+
+/*.título {
+    margin-top: 15px;
+}*/
+
+/*.doces {
+    /*margin-left: 15px;
+}*/
+
+body {
+    background-color: var(--cor_6);
+    font-family: var(--fonte_padrão);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor_3), var(--cor_5));
+    min-height: 150px;
+    /*Faz aumentar a área do cabeçalho.*/
+    text-align: center;
+    padding: 40px;
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--fonte_de_destaque_2);
+    margin-bottom: 30px;
+    font-size: 3em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+    font-weight: normal;
+}
+
+header > p {
+    color: white;
+    font-family: var(--fonte_padrão);
+    font-size: 1.2em;
+    max-width: 500px;
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+}
+
+nav {
+    background-color: var(--cor_5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px black;
+}
+
+nav > a {
+    color: var(--cor_1);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+    /*Literalmente, duração da transição.*/
+    margin-bottom: 20px;
+}
+
+nav > a:hover {
+    background-color: var(--cor_3);
+    color: var(--cor_5);
+}
+
+a.external::after {
+    content: '\00A0\1F517';
+    /*Conferir: "::after".*/
+}
+
+div.vídeo {
+    background-color: var(--cor_5);
+    /*margin: 0px -20px 30px -20px;*/
+    /*O resultado, na minha opinião, fica melhor sem essa margem.*/
+    padding: 20px;
+    position: relative;
+    padding-bottom: 59%;
+    /*Mexer nessa porcentagem, altera as bordas pretas (laterais) do vídeo do Youtube.*/
+}
+
+div.vídeo > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+main {
+    max-width: 1000px;
+    min-width: 300px;
+    background-color: white;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h1 {
+    color: var(--cor_4);
+    font-family: var(--fonte_de_destaque_1);
+    font-weight: normal;
+    font-size: 1.8em;
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+    /*Para centralizar uma imagem, use os códigos acima (menos "width"). Uma imagem não é um bloco, então usamos "display" e "margin".*/
+    /*"Width" serve para delimitar o tamanho máximo da imagem (o que vai ajudar na responsividade).*/
+}
+
+main p {
+    /*Há mais coisas dentro do "main", por isso não foi especificado o p como "filho" de "main".*/
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    /*Espaço do início de parágrafo.*/
+    font-size: 1em;
+    line-height: 2em;
+    /*Epaço entre as linhas.*/
+}
+
+main strong {
+    color: var(--cor_4);
+    font-weight: bold;   
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor_5);
+    background-color: var(--cor_1);
+    padding: 2px 6px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor_4);
+}
+
+main h2 {
+    font-family: var(--fonte_de_destaque_1);
+    color: var(--cor_5);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor_1), transparent);
+    text-indent: 8px;
+    padding: 5px 0px;
+    font-weight: normal;
+}
+
+aside {
+    background-color: var(--cor_1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+    margin-top: 25px;
+}
+
+aside > h3 {
+    background-color: var(--cor_4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    /*Essa configuração de "margin" faz com que a margem cresça "para fora". - Essa configuração acaba por remover as bordas superiores.*/
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside ul {
+    list-style-type: '\2714\00A0\00A0';
+    /*"0020" tem o mesmo efeito que "00A0": espaço de quebra. - Esses comandos não são compatíveis com todos os navegadores.*/
+    list-style-position: inside;
+    /*Traz as marcações para dentro da "box-level".*/
+    columns: 2;
+}
+
+footer {
+    background-color: var(--cor_5);
+    color: white;
+    /*Apenas para reforçar: quando a intenção é mudar a cor da letra, basta usar "color: (cor);".*/
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer a {
+    /*Também se pode escrever assim: "footer > p > a".*/
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor_1);
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas Personalizadas</title>
+
+    <style>
+
+        h1 {
+            border: 20px solid transparent;
+            padding: 10px;
+            border-image-source: url(Imagens/borda.png);
+            /*"Control" + espaço funciona aqui.*/
+            border-image-slice: 39;
+            border-image-repeat: repeat;
+            /*Além de "repeat", para se atingir o mesmo resultado, outra opção que poderia ser escolhida aqui seria "stretch".*/
+            /*O "stretch" esticará uma das bordas.*/
+
+            /*Shorthand da borda personalizada:*/
+
+            border: url(Imagens/borda.png) 27 repeat;
+
+            /*Caso a borda normal seja removida, o processo não funcionará (a primeira linha desse seletor).*/
+            /*Se pode usar a opção de borda "transparent" para se evitar eventuais erros.*/
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Teste de Borda</h1>
+    
+</body>
+
+</html>

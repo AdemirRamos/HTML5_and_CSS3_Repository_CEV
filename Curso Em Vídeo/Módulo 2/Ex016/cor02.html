@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+
+    <style>
+
+        * {
+            height: 100%;
+            /*O comando acima torna o degradê mais uniforme pela tela (de baixo para cima).*/
+        }
+
+        body {
+            background-image: linear-gradient(to top, #3DCDE0 50%, #145561 50%);
+            /*Você pode adicionar mais cores ao seu gradiente - se assim desejar (o meu conta com apenas duas).*/
+            /*background-image: radial-gradient(circle, red, blue, green);*/
+            /*A linha de código acima torna o degradê esférico.*/
+
+            background-attachment: fixed;
+            /*A linha de código acima fixa o fundo da página.*/
+            /*Após o código das cores, você pode colocar uma porcentagem para representar o tamanho da cor anterior à porcentagem.*/
+            /*Quanto maior a porcentagem, maior vai ser a fatia da tela ocupada por a cor vinculada a essa porcentagem.*/
+        }        
+
+    </style>
+
+</head>
+
+<body>
+    
+    <h1>Testando Gradientes</h1>
+
+    <!--"Style" vai sempre dentro de "head".-->
+    <!--No "linear-gradient()", dentro dos parênteses, você também pode colocar os graus. Por exemplo: "90deg"-->
+    <!--Outros exeplos de sentido do gradiente: "to left"; "to top"; "to bottom"; et cetera.-->
+    <!--"* {}" abre as configurações globais das CSS.-->
+
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+
+    <style>
+
+        h1 {
+            /*display: inline;
+
+            - Essa configuração (acima) torna o "h1" em um elemento "inline-level".
+            - Para tornar um elemento "inline-level" em "box-level", basta selecionar display e aplicar a propriedade "block".
+            - Exemplo: display: block;
+            - Já a opção "display: inline-block;" faz com que o elemento permaneça como "inline" mas com algumas característica de "BL".
+            - "BL": "box-level" / IL: "inline".*/
+
+            /*Quando se tem traços dentros do seu "padding", "margin" e "border", é sinal de que eles não possuem nenhum valor.*/
+
+            background-color: lightgreen;
+            height: 300px;
+            width: 300px;
+
+            /*No "Devtools", você pode alterar essas configurações (sem alterar o documento original) para pré-visualizar o conteúdo.*/
+
+            /*Essa configuração ("height" e "width") recebem o nome de "box-sizing".*/
+            
+            /*border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray
+
+            Dashed: deixa a borda tracejada.
+            Dotted: deixa a borda pontilhada.
+            Doubled: deixa a borda com duas linhas.
+            Groove: deixa a borda com uma margem 3D.
+
+            "Shorthand Border":*/
+
+            border: 10px solid darkslategray;
+
+            /*padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            "Shorthand Padding:"*/
+
+            padding: 10px; /*10px 10px 10px;*/
+
+            /*Seja no "padding", ou em outro lugar do gênero, se todos os valores forem iguais, basta digiter o primeiro.*/
+            /*Se o "padding" for preenchido só com dois valores, a margem de cima e a de baixo ficam iguais; idem a (margem) da direita e a da esquerda.*/
+
+            /*margin: auto;
+            Centraliza a margem no centro da caixa.
+            "Shorthand Margin":
+
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;*/
+
+            /*No "Devtools", será mostrado um ícone onde estarão contidas todas as alterações do "shorthand".*/
+
+            margin: 10px;
+
+            /*Também é possível centralizar as margens da direita e da esquerda dentro de um "shorthand."
+            Exemplo: margin: 10px auto 10px auto;*/
+
+            /*outline-width: 5px;
+            outline-style: dashed;
+            outline-color: red;
+            
+            "Outline" fica entre a borda e a margem porém dentro da margem  
+            "Outline" também pode ultrapassar a margem.
+            
+            "Shorthand Outline":*/
+
+            outline: 5px dashed red;
+
+            /*Propriedades anatômica: "border", "padding", "margin" e "outline".*/
+            /*h1: Elemento do tipo "box-level".*/
+        }
+
+        a {
+            /*display: block;*/
+
+            /*border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;*/
+
+            border: 10px solid darkslategray;
+
+            /*padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;*/
+
+            padding: 10px;
+
+            /*a: Elemento do tipo "inline-level".*/
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Exemplo de caixa "box-level"</h1>
+
+    <p>Parágrafos também são exemplos de "box-level", mas os <a href="#">"links" são exemplos de caixas "inline-level".</a> Vamos ver como tudo isso funciona.</p>
+
+    <!--No "DevTools" do seu navegador, você pode alterar (a fins meramente de visualização) elementos do seu documento HTML. As modificações feitas lá, não serão aplicadas no seu documento.-->
+
+</body>
+
+</html>

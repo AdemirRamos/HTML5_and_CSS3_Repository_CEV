@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS - Tamanho das Fontes</title>
+
+    <style>
+
+        body {
+            /*font-family: 'Courier New'*/
+            /*Caso a fonte se constitua de duas palavras, a fonte deve ir entre aspas.*/
+            
+            font-family: Arial, Helvetica, sans-serif;
+            /*Essa opção (acima) faz com que sejam procuradas todas essas fontes - e a primeira achada será usada.*/
+            /*O nome disso (da combinação descrita acima) é: "safe combination" (combinação segura).*/
+            /*Sempre termine sua "font-family" com uma fonte genérica (para que seja reconhecida independente do navegador/dispositvo).*/
+            /*Todos os dispositivos possuem uma fonte "sans-serif".*/
+            /*Caso você escolha "serif", o navegador/dispositivo vai escolher (sem critério algum) uma fonte "serifada".*/
+            /*A lógica do caso acima também se aplica a "monospace" (uma fonte monoespaçada será escolhida).*/
+
+            /*Tamanho das fontes:*/
+
+            /*Medidas Absolutas:
+            
+            - cm (centímetro);
+            
+            - mm (milímetro);
+            
+            - in ("inche" [polegada]);
+            
+            - px (pixel);
+            
+            - pt (ponto);
+            
+            - pc ("paica").*/
+
+            /*Medidas Relativas: 
+            
+            - em (medida relativa ao tamanho atual da fonte / medida relativa à altura da letra M [maiúscula de uma letra]);
+            
+            - ex (medida relativa ao altura x de uma fonte);
+            
+            - rem (medida análoga à em, porém relativa à altura da "root" [raiz - fonte configurada no "body" ou no "*{}"]);
+            
+            - vw ["view-width" - largura da "viewport" {tela}]
+            - (medida relativa ao tamanho da sua tela - porcentagem da [largura da] "viewport");
+            
+            -vh [altura da "viewport"] (medida relativa à altura da "viewport");
+            
+            - % [porcentagem] (medida relativa à porcentagem).*/
+
+            /*A W3C, para medida de fonte ("font-size), recomenda usar "px" e "em".*/
+
+            /*A depender de onde serão reproduzidas as suas fontes, você pode ter que escolher entre as opções (das categorias) acima.*/
+
+            /*16px ("pixels"), normalmente, é o tamanho padrão da fonte.*/
+
+            /*P. S.: Com (a medida) "in", caso se deseja usar um número real, use ponto ao invés de vírgula. Exemplo: "0.5in".*/
+
+            /*P. S.: Não se pode ter espaço entre a indicação da medida e o valor atribuido à medida. Exemplo: "1 cm" (errado).*/
+
+            /*"pt" é uma medida usada no tamanho da fonte do Word, por exemplo.*/
+
+            /*16px, normalmente, é igual a 1em.*/
+
+            /*A vantagem de se usar "px" ou "em" é a maior chance de compatibilidade com diferentes telas em diferentes dispositivos.*/
+
+            font-size: 16px;
+        }
+
+        h1, h2 {
+            font-family: 'Times New Roman', Times, serif;
+            /*Caso o "h2" seja removida daqui, ele herdará a fonte do "body". A essa ocorrência, se dá o nome de "herança".*/
+        }
+
+        /*Para, "sites", com textos longos, a recomendação é usar fonte "sans-serif".*/
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos cupiditate tempora, neque praesentium, excepturi iusto at magnam similique sed blanditiis enim nobis animi fugit voluptatem aliquam ipsam sunt reprehenderit accusantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dignissimos ullam non deserunt. Aspernatur, possimus! Quos vero alias sint facilis ad vel voluptate amet temporibus dignissimos necessitatibus, dolores debitis quasi.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi fugit praesentium eos quas! Nostrum dolore veniam, laboriosam illum unde totam libero obcaecati rerum consequuntur a fuga quos consectetur nihil ratione!</p>
+
+    <h2>Subtítulo do Exercício</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur quisquam facere totam vel mollitia cum! Aliquid explicabo saepe asperiores necessitatibus non! Voluptatibus accusamus maiores quod, minima eligendi assumenda quos deserunt! lorem</p>
+
+    <a href="https://www.google.com/search?client=opera&q=css+web+safe+font+combinations&sourceid=opera&ie=UTF-8&oe=UTF-8">"Link" com "CSS Web Safe Font Combinations".</a>
+
+</body>
+
+</html>

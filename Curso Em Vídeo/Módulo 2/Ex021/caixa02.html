@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        h1 {
+            box-shadow: inset 2px 1px 14px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        nav {
+            background-color: rgb(102 102 102);
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315)
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+            box-shadow: 1px 1px 1px black;
+            /*Ordem dos "pxs": descolamento horizontal, deslocmanto vertical, espalhamento e sombra.*/
+        }
+
+        nav:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 1px;
+            /*A lógica aplicada à margem também pode ser aplicada aqui: configurar somente dois valores e, assim, modificar os demais.*/
+            /*P. S.: A linha acima se refere à "border-radius".*/
+            /*Adicione a opção "inset" para gerar uma sombra para dentro da sua caixa. - Vide h1.*/
+            /*Dentro do "Devtools", você vai ter duas opções para direcionar a sombra: "outset" (para fora) e "inset" (para dentro).*/
+            /*Para se gerar um efeito mais efetivo de sombra, o ideal é se ter uma sombra preta com transparência.*/
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: rgb(165 165 165);
+        }
+
+        footer {
+            background-color: black;
+            color: aliceblue;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+            /*Caso o seu "padding" esteja dando um espaço muito grande, tente zerar a "margin".*/
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: aliceblue;
+            border-radius: 50px;
+            /*"border-raidus" também pode ser configurada com porcentagem.*/
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!--As "grouping tags" costumavam ser duas: "div" e "span"-->
+    <!--"header", "main" e "footer" também são vistas como "divs", porém usá-las faz total diferença para mecânismos de busca pois essas "tags" são semânticas.-->
+
+    <div></div>
+    <span></span>
+
+    <header>
+
+        <h1>Menu Site</h1>
+        
+        <nav>
+            
+            <!--"nav" é o local para se dispor os "links" do seu "site".-->
+
+            <a href="a">Link.</a>
+            <a href="a">Link.</a>
+            <a href="a">Link.</a>
+            <a href="a">Link.</a>
+            <a href="a">Link.</a>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section id="assuntos">
+
+            <p>Esportes, Política e Tecnologia.</p>
+
+        </section>
+
+        <section id="notícias">
+
+            <article>
+
+                <aside>
+
+                    <!--"aside" é o local para dispor o conteúdo periférico.-->
+
+                    <h2>Notícia Sobre o Brasil</h2>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis corporis quia ex officia dolores laboriosam quisquam voluptate. Minus nulla nesciunt quidem dolor. Corrupti commodi hic eos ullam nesciunt corporis vero?</p>
+
+                    <p>Artigo escrito por José da Silva.</p>
+
+                </aside>
+
+            </article>
+
+            <article>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>Desenvolvido pelo Curso Em Vídeo.</p>
+
+    </footer>
+
+    <div id="bola"></div>
+
+    <!--A partir da HTML5, não há mais limitações ou proibições para colocar uma "grouping tag" dentro de outra.-->
+
+</body>
+
+</html>

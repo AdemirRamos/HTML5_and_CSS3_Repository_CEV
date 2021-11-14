@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+/*O nome dado a esses código que começam com "@" é "regra".*/
+/*"UTF-8" gera compatibilidade com acentos.*/
+/*As regras sempre vão no começo do documento relativo ao CSS.*/
+
+body {
+    background-color: lightseagreen;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+    color: red;
+    background-color: cornsilk;
+}
+
+h2 {
+    color: blue;
+}
+
+p {
+    text-align: justify;
+}

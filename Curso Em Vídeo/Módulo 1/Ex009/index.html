@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+
+</head>
+
+<body>
+
+    <h1>Trabalhando Com Listas</h1>
+    <h2>Listas Ordenadas</h2>
+
+    <!-- 
+    1 - Acordar;
+    2 - Ligar para o João;
+    3 - Tomar café;
+    4 - Escovar os dentes;
+    5 - Lavar roupa.
+
+    Esse tipo de lista deve ser evitada pois, caso você precise mudar alguma coisa na lista, isso pode gerar problemas de organização.
+    -->
+
+    <ol type="1" start="4"> <!-- "<ol></ol>"": lista ordenada; "<li></li>": item de lista.-->
+
+        <li>Acordar;</li>
+        <li>Ligar para o João;
+        <li>Tomar café;</li>
+        <li>Escovar os dentes;
+        <li>Ir para a faculdade;</li>
+        <li>Almoçar;</li>
+        <li>Ir para o trabalho;</li>
+        <li>Voltar para casa;</li>
+        <li>Jantar;</li>
+        <li>Dormir.</li>
+            
+        <!--A partir do HTML5, o "</li>" (fechamento da "tag li") é opcional.-->
+
+        <!--Esse tipo de lista evita problemas do tipo: ter que adicionar outro item à lista posteriormente.-->
+        
+        <!--O comando "type=''" permite escolher o ícone para os itens da lista.-->
+
+        <!--'start="4"' faz com que a lista (enumerada) começe em 4 (quatro).-->
+
+        <!--Basta usar o comando "control + espaço" para acessar as opções de "type (ol)".-->
+
+    </ol>
+
+    <h2>Listas Não-ordenadas</h2>
+
+    <ul type="disc"> <!--Opções para "type (ul)": "disc", "circle" e "square".-->
+
+        <li>Comprar pão;</li>
+        <li>Comprar leite;</li>
+        <li>Comprar tomate;</li>
+        <li>Comprar alface;</li>
+        <li>Comprar manteiga;</li>
+        <li>Comprar arroz;</li>
+        <li>Comprar feijão.</li>
+
+    </ul>
+
+    <h2>Minhas Linguagens Favoritas</h2>
+
+    <ol>
+
+        <li>Antigas:</li>
+
+        <ol type="a">
+
+            <li>Clipper;</li>
+            <li>Visual Basic;</li>
+            <li>Fortran;</li>
+            <li>Delphi.</li>
+
+        </ol>
+
+        <li>Novas:</li>
+
+        <ol type="a" start="5"> <!--"start=''" é um parâmetro exclusivamente numérico, por isso, não adianta colocar "e" entre aspas.-->
+
+            <li>PHP;</li>
+            <li>Python;</li>
+            <li>Javascript;</li>
+            <li>Kotlin.</li>
+
+        </ol>
+
+    </ol>
+
+    <h2>Meus Jogos Favoritos</h2>
+
+    <ol>
+
+        <li>NES:</li>
+
+        <ul type="square">
+
+            <li>Mario Bros:</li>
+
+            <ul type="circle">
+
+                <li>Mario Bros 3;</li>
+                <li>Mario: Lost Levels.</li>
+
+            </ul>
+
+            <li>Ninja Gainden.</li>
+
+        </ul>
+
+        <li>SNES:</li>
+
+        <ul type="square">
+
+            <li>Mario;</li>
+            <li>Donkey Kong.</li>
+
+        </ul>
+
+        <li>PlayStation:</li>
+
+        <ul type="square">
+
+            <li>Final Fantasy;</li>
+            <li>Castelvania.</li>
+
+        </ul>
+
+    </ol>
+
+    <h2>Lista de Definições</h2>
+
+    <dl> <!--"Definition list".-->
+
+        <dl>HTML:</dl> <!--"Definition term" / termo.-->
+        <dd>Linguagem de marcação para a criação do conteúdo de um "site".</dd> <!--"Definition description" / descrição.-->
+
+        <dt>CSS:</dt>
+        <dd>Linguagem de marcação para a criação do "design" de um "site".</dd>
+
+        <dt>Javascript:</dt>
+        <dd>Linguagem de programação para a criação de interatividade em um "site".</dd>
+
+    </dl>
+
+</body>
+
+</html>

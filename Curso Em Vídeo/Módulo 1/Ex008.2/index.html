@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+
+</head>
+
+<body>
+    
+    <h1>Outras Formatações</h1>
+
+    <h2>Código-fonte / Pré-formatação</h2>
+
+    <p>O comando "<code>window.document.getElementsById('teste')</code>" é escrito em linguagem JavaScript.</p>
+    <!--"code" torna a mensagem envelopada monoespaçada.-->
+
+    <pre>
+        <code>
+
+            num = int(input('Digite um número: '))
+            if num % 2 == 0:
+                print('O número {} é par.'.format(num))
+            else:
+                print(f'O número {num} é ímpar.')
+            print('Fim do programa.')
+
+            <!--O Guanabara digitou a formatação assim: print(f'O número {num} é par.'). É provável que essa seja uma nova síntaxe para o Python.-->
+            <!--A "tag code" não arranja o seu código com indetação, ou seja, os códigos acima (em Python) vão aparecer fora de ordem e não como são mostrados aqui.-->
+            <!--Para resolver esse problema, você envelopa a "tag code" em uma "tag pre".-->        
+            <!--Shift + Tab voltam para a borda da tela.-->
+
+        </code>
+    </pre>
+
+    <h2>Citações Simples</h2>
+
+    <p>Como diria o pai de um amigo: <q>O computador é um burro muito rápido!</q></p>
+    <!--Posso usar aspas direto ou posso usar a "tag q" (q == quote).-->
+    <!--A "tag q" também atribui sentido ao que você digitou, ou seja, a "tag q" é semântica.-->
+    <!--Use a "tag q" quando for uma citação; se não for o caso, pode usar aspas (simples ou duplas) normalmente.-->
+
+    <h2>Citações Comopletas</h2>
+
+    <p>
+        Segundo Jeff Nobel, em seu livro "HTML Para Leigos":
+        <blockquote cita='aqui vai o "link".'>
+        <q>p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, amet nesciunt veritatis, nobis minus consectetur alias quos libero fugit fuga ratione recusandae? Cumque maiores architecto itaque repellat quas quis vitae.
+        
+        - Lorem, P</q>
+        </blockquote>
+    </p>
+    <!--Não pesquisei a citação do autor, portanto, só usei "p lorem" para preencher a citação.-->
+    <!--A "tag blockquote" vai dar um destaque a citação.-->
+    <!--Dentro da "tag blockquote" você também pode adicionar uma "tag cite=". Essa última "tag" servirá para se colocar o "link" da citação.-->
+    <!--A "tag cite", entretanto, não disponibilizará o "link" visualmente no seu texto - ele (o "link") ficará disponível em segundo plano podendo ser usado por mecanismos de busca e afins.-->
+    <!--Entenda os "q's" da "tag" como as próprias aspas.-->
+
+    <h2>Abreviações</h2>
+
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
+    <!--A "tag abbr" não transforma o conteúdo dentro dela em um "hyperlink", ela apenas destaca o termo e abre um janela com o título do que foi envelopado por ela - quando houver interação com o conteúdo envelopado.-->
+
+    <h2>Texto Invertido</h2>
+
+    <p><bdo dir="ltr">Estou aprendendo a criar coisas em HTML.</bdo></p>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p>
+    <!--<bdo dir="ltr"></bdo> = sentido do texto: começa da esquerda e vai para a direita.-->
+    <!--<bdo dir="rtl"></bdo> = sentido do texto: começa da direita e vai para a esquerda.-->
+
+</body>
+
+</html>

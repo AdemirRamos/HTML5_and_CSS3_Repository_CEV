@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: #f00;
+            text-decoration: none;
+            /*"text-decoration: none" retira o sublinhado do texto.*/
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkred;
+            /*"Visited" é uma pseudo-classe. "Visited" indica que o "link" em questão já foi visitado.*/
+        }
+
+        a:hover {
+            text-decoration: underline;
+            /*Quando o mouse passar por cima do texto especificado, aparecerá um sublinhado.*/
+            color: #000;
+        }
+
+        a:active {
+            color: yellow;
+            /*Quando o "link" for clicado, ele ficará com a cor selecionada.*/
+        }
+
+        /*Pseudo-classes são palavras que definem estados de elementos em HTML.*/
+
+        /*Pseudo-elemento: pode agir nas classes, nos elementos, nos "ids", et cetera. PE mexe no conteúdo (periférico) do elemento.*/
+
+        /*Dois pontos (::) representam os pseudo-elementos.*/
+
+        a::after {
+            content: '← ';
+            /*Depois dos "links", o conteúdo dentro de "content" irá aparecer.*/
+            /*Caso o código do "site" não funcione, você pode colar o símbolo diretamente aqui.*/
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgrey;
+        }
+
+        a::before {
+            /*O conteúdo dentro de "content", irá aparecer antes do "link".*/
+            content: ' →';
+        }
+
+        .especial {
+            content: '↠';
+            /*Aparentemente, as outras configurações da "tag a" estão impedindo a aplicação dessa configuração de "content".*/
+            background-color: rgb(97, 97, 190);
+            color: #fff;
+        }
+
+        /*Glossário (Seletores Personalizados):
+        
+        - # = id;
+        - . = class;
+        - : = pseudo-classe;
+        - :: pseudo-element;
+        - > children.*/
+
+    </style>
+
+</head>
+
+<body>
+    
+    <h1>Personalizando Links</h1>
+
+    <ul>
+
+        <li><a href="https://www.youtube.com/watch?v=vMlrcOVr7po&list=TLPQMDgxMDIwMjHFBTIlTWKZ5A&index=2" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://www.youtube.com/watch?v=vMlrcOVr7po&list=TLPQMDgxMDIwMjHFBTIlTWKZ5A&index=2" class='especial'>Canal do YouTube</a></li>
+        <li><a href="https://www.youtube.com/watch?v=vMlrcOVr7po&list=TLPQMDgxMDIwMjHFBTIlTWKZ5A&index=2" class="especial">"Site" do Curso Em Vídeo</a></li>
+
+    </ul>
+
+</body>
+
+</html>

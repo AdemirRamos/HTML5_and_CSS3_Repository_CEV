@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando Com "Links"</title>
+
+</head>
+
+<body>
+
+    <h1>Usando "Links" Externos</h1>
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">repositório público no GitHub.</a></p>
+
+    <!--Use "target='_blank'" para abrir uma nova aba no navegador e, assim, garantir que o visitante permaneça no seu "site".-->
+    <!--A explicação acima deve ser aplicada quando a "página-destino" for "site" pertencente a outrem.-->
+    <!--Caso o "site" seja seu, você não precisa abri-lo em uma nova aba.-->
+    <!--"rel=''": indica que este é um "link" do tipo externo.-->
+    
+    <p>Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo" target="_blank" rel="external">canal gratuito no YouTube.</a></p>
+
+    <p>E este é o meu <a href="https://github.com/AdemirRamos">repositório no GitHub.</a></p>
+
+    <h1>Usando "Links" Internos</h1>
+
+    <!--"'Link' interno" estabelece uma ligação com outra página dentro do nosso servidor que diz respeito à nossa página.-->
+    <!--Em outras palavras: é um "link" que nos redirecionará a um (a) página/"site" ligado (a) à nossa (o) página/"site".-->
+
+    <p>Está é a primeira página do "site". Se você quiser, você também pode acessar a minha <a href="page002.html" rel="next" target="_self">segunda página.</a></p>
+
+    <!--Quando o "link" é interno, não é preciso usar a URL completa. Basta indicar o nome do arquivo.-->
+    <!--O arquivo-destino deve estar na mesma pasta do arquivo principal/base.-->
+    <!--Não existe "rel='internal'", mas, caso a página "linkada" seja a próxima página/página de avanço, se pode usar "rel='next'".-->
+
+    <p>Você também pode acessar a nossa <a href="Notícias/page003.html" rel="next" target="_self">página de notícias.</a></p>
+
+    <!--Como o arquivo "page003" está dentro de outra pasta, o endereço fica levemente diferente.-->
+
+    <!--Caso o "link" leve a uma página pertencente ao seu "site", ou você não usa o "target='_self'" ou você usa "rel='_self'".-->
+
+    <h1>"Links" Para "Download"</h1>
+
+    <ul>
+
+        <li><a href="Livro/mycv.pdf" download="mycv.pdf" type="application/pdf">Baixar o livro em PDF.</a></li>
+        <li><a href="Livro/mycvfolder.zip" download='mycvfolder.zip' type="application/zip"></a>Livro compactado em ZIP.</li>
+        
+        <!--Caso você não tenha um "link" para adicionar, basta usar uma "#".-->
+        <!--A depender do navegador, o arquivo pode não ser baixado ao se clicar no seu "link".-->
+        <!--Para resolver esse problema, basta usar o parâmetro "download=''" e/ou o parâmetro "type=''".-->
+        <!--Não consegui disponibilizar o meu arquivo em um pasta compactada. - Procurar por isso, depois.-->
+
+        <p>"Site" com todas as "media-types": <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="external">iana.</a></p>
+
+    </ul>
+
+</body>
+
+</html>

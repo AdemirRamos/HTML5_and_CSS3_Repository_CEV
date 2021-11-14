@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeo com HTML5</title>
+
+</head>
+
+<body>
+
+    <!--No "site" Pexels também é possível baixar vídeos (livres de direitos autorais).-->
+    <!--Compatibilidade em navegadores: os padrões mais utilizados e suportados são: MP4, M4V, WEBM e OGV.-->
+    <!--Assim como o áudio, tenha mais de uma versão do seu vídeo (devido à conpatibilidade com o navegador).-->
+    <!--Dica de programa para converter o formato de vídeos: "Handbrake".-->
+    <!--Pesquise por "sites" para converter o seu vídeo para OGV.-->
+
+    <h1>Inserindo Vídeos Hospedados Localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+
+    <video src="Mídia/yellow-leaves.mp4" controls height="500" width="500"></video>
+
+    <video height="500" width="500" poster="Imagens/A.png" controls>
+
+    <!--Poster funciona como uma "thumbnail" (miniatura).-->
+    <!--Você tambpe pode adicionar "loop" e/ou "autoplay" dentro da abertura da "tag video".-->
+
+    <source src="Mídia/yellow-leaves.mp4" type="video/mp4">
+    <source src="Mídia/yellow-leaves.m4v" type="video/m4v">
+    <source src="Mídia/yellow-leaves.webm" type="video/webm">
+    <source src="Mídia/yellow-leaves.ogv" type="video/ogv">
+    <p>O seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+
+    <!--Usei os outros tipos de arquivos apenas a título de curiosidade (pois não os tenho convertidos).-->
+
+    </video>
+
+    <h1>Inserindo um Vídeo do YouTube</h1>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/CNhLZ3M3fuM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <!--Isso foi dito anteriormente (e, provavelmente, eu não havia registrado ainda):-->
+    <!--O Google é o maior buscador do mundo; o YouTube é o segundo; ambos os "sites" pertencem ao Google.-->
+    <!--Dito isso, é importante estar em ambas as plataformas.-->
+    <!--M4V é o formato mais recomendável para "sites"-->
+
+    <!--Também é possível inserir vídeos direto do Vimeo.-->
+
+</body>
+
+</html>

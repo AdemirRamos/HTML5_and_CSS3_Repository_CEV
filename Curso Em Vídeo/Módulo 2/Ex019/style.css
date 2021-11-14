@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(169, 241, 167);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(12, 145, 7);
+}
+
+h1#principal {
+    text-align: center;
+    /*Antes da tralha, se você quiser, você pode colocar "h1" (que, nesse caso, é a "tag" relacionada a esse seletor).*/
+    background-color: green;
+    color: white;
+}
+
+h2 {
+    color: rgb(13, 82, 12);
+}
+
+/*Em HTML "id" -> Em CSS "#"; Em HTML "class" -> Em CSS ".".*/
+/*Dentro de um mesmo documento HTML, só se pode ter um elemento com "id". - Apesar disso funcionar (caso seja consumado).*/
+/*"class" também gera configuração personalizada.*/
+/*Diferente de "id", "class" pode se repetir em um mesmo documento HTML para diferentes elementos.*/
+/*Dica: não baseie o nome da suas classes ou "ids" com base na forma, mas sim na função.*/
+/*"id": permitido somente um elemento (por página); "class": permitido vários elementos (independente da página).*/
+
+.basico {
+    color: rgb(13, 82, 12);
+    font-weight: bold;
+}
+
+.intermediario {
+    color: rgb(206, 192, 65);
+    font-weight: bold;
+}
+
+.avancado {
+    color: rgb(167, 40, 40);
+    font-weight: bold;
+}
+
+.destaque {
+    background-color: rgba(179, 179, 73, 0.788);
+}

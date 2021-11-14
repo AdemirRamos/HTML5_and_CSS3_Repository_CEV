@@ -1,0 +1,71 @@
+- HARMONIA DE CORES:
+
+- CÍRCULO CROMÁTICO:
+
+- CORES PRIMÁRIAS:
+
+As cores primárias possuem uma "harmonia grosseira". Não combinam muito entre si, porém podem ser usadas para se criar novas cores.
+
+Cores primárias: Azul, Amarelo, Vermelho.
+
+- CORES SECUNDÁRIAS:
+
+As cores secundárias também possuem uma "harmonia grosseira".
+
+Cores secundárias: Verde, Violeta, Laranja.
+
+- CORES TERCIÁRIAS:
+
+As cores terciárias são uma mistura entre cores primárias e secundárias.
+Sempre que se for formar um nome para uma cor terciária, primeireiro vem o nome da cor primária e depois o nome da cor secundária.
+Toda cor dita terciária, está entre uma cor secundária e uma cor primária.
+De maneira grosseira, as cores terciárias são chamadas de "tons pasteis".
+Os "tons pasteis" não são exatamente cores terciárias, mas as cores terciárias possuem um tom pastel. 
+
+Exemplos de cores terciárias: Amarelo-esverdeado; Amarelo-alaranjado; Vermelho-alaranjado; Vermelho-arroxeado; Azul-arroxeado; Azul-esverdeado.
+
+- TEMPERATURA DE CORES:
+
+À esquerda do círculo cromático, temos as cores frias. - Ver "print" 'Cores Frias'.
+À direita do círculo cromático, temos as cores quentes. - Ver "print" 'Cores Quentes'.
+
+- PALETA DE CORES:
+
+Normalmente (e desconsiderando preto e branco), uma paleta de cores tendem a ter, no máximo, 5 (cinco) cores.
+No mínimo 3 (três) [cores] e uma média de 4 (quatro) [cores].
+
+- CORES COMPLEMENTARES:
+
+Cores complementares são aqueles que têm/geram o maior contraste entre si. As cores complementares se encontram opostas umas às outras.
+(Ver "print" 'Cores Complementares').
+
+- CORES ANÁLOGAS:
+
+As cores análogas, ao contrário das complementares, não têm/geram um contraste acentuado entre si. Cores análogas são "cores vizinhas".
+É possível misturar cores análogas e complementares.
+
+- CORES ANÁLOGAS RELACIONADAS:
+
+Cores análogas relacionadas são cores análogas porém com tons um pouco mais contrastantes entre si. - Ver "print" 'Cores Análogas Relacionadas 1 e 2'.
+
+- CORES INTERCALADAS:
+
+Cores intercaladas são cores com um constraste nem tão acentuado nem tão suave. - Ver "print" 'Cores Intercaladas 1 e 2'.
+Esse tipo de paleta tem cores mais duras (isso não é bom e nem ruim, é apenas uma ressalva).
+
+- CORES TRIÁDICAS:
+
+As cores triádicas são cores separadas por três tons umas das outras (essas cores formam um triângulo no círculo cromático). - Ver "print" 'Cores Triádicas'.
+
+- CORES EM QUADRADO:
+
+As cores em quadrado são cores separadas por dois tons umas das outras (essas cores formam um quadrado no círculo cromático). - Ver "print" 'Cores Em Quadrado'.
+
+- CORES TETRÁDICAS:
+
+As cores tetrádicas são cores complementares partindo de diferentes tons (essas cores formam um retângulo no círculo cromático). - Ver "print" 'Cores Tetrádicas'.
+Quanto mais próximo forem os tons tetrádicos, mais simétricas serão as cores obtidas. Exemplo: Azul e Azul-esverdeado.
+
+- CORES MONOCROMÁTICAS (MONOCRÔMICAS) / MONOCROMIA / DEGRADÊ:
+
+Na monocromia (ou cores monocromáticas [monocrômicas]), temos uma mesma cor apenas apresentando diferentes níveis de saturação e brilho.

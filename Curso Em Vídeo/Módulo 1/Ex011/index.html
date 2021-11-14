@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+
+</head>
+
+<body>
+
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir este "site" em vários dispositivos diferentes ou simplesmente aumente e/ou diminua o tamanho do seu navegador.</p>
+
+    <picture>
+
+        <source media="(max-width: 750px)" srcset="Imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="Imagem flexível.">
+
+        <!--"Source media": caso o navegador ultrapasse o tamanho máximo (1000px), será carregada a "foto-m".-->
+        <!--Preste atenção na ordem das "sources". Elas precisam estar nessa ordem para funcionar.-->
+        <!--Os 50px a mais são só para dar um pouco mais de espaço (devido à barra de rolagem).-->
+        <!--Também se pode adicionar outros tamanho de imagem (apenas lembre-se de respeitar o modelo dado acima).-->
+
+        <!--Dica para achar músicas livres de direitos autorais:-->
+
+        <!--Acesse "YouTube Studio"; "Biblioteca de Áudio"; "Atribuição"; basta pesquisar sobre cada opção lá.-->
+        <!--Todas as ressalvas feitas ao tamanho, qualidade e direitos autorais das imagens também valem para vídeos ou músicas.-->
+
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+
+    <audio src="Mídia/trigun.mp3" autoplay controls></audio>
+    
+    <!--Essa é a maneira mais simples de se adicionar um arquivo de áudio ao seu "site".-->
+    <!--Para que o arquivo seja tocado, é preciso se usar a propriedade "autoplay".-->
+    <!--A depender do navegador, só o "autoplay" não bastará, por isso, também adicione "controls".-->
+    <!--Novamente: a depender do navegador, alguns arquivos podem ou não funcionar (sejam MP3, OGG ou WAV).-->
+
+    <!--Formatos de arquivo em áudio: MP3, WAV, OGG.-->
+
+    <!--Outra maneira de se adicionar áudios (considerando que o navegador de quem acessa o "site" pode não funcionar perfeitamente):-->
+
+    <audio preload="metadata" autoplay controls>
+
+        <!--"preload" leva três opções: "auto", "metadata" e "none".-->
+        <!--"auto" faz com que o navegador só considere que o "site" terminou de carregar após o carregamento do áudio.-->
+        <!--"metadata" faz com que somente algumas informações sejam carregadas para o navegador entender que o "site" já carregou.-->
+        <!--"none" faz com que o arquivo só seja carregado quando o usuário reproduzir o arquivo de áudio.-->
+        <!--O comando "loop" faz com que o áudio se repita.-->
+        <!--O comando "controls" faz aparecer os botões para controlar as ações do arquivo de mídia.-->
+
+        <source src="Mídia/trigun.mp3" type="audio/mpeg">
+        <source src="Mídia/trigun.ogg" type="audio/ogg"> 
+        <source src="Mídia/trigun.wav" type="audio/wav">
+
+        <!--A ordem posta dos arquivos (acima) é a ordem na qual o navegador tentará reproduzi-los.-->
+        <!--Caso o primeiro falhe, ele passará para o segundo e assim por diante.-->
+        <!--Caso nenhum consiga ser carregado, então não será possível ouvir o áudio.-->
+        <!--O recomendável é se evitar o arquivo do tipo "WAV" pois esse tipo de arquivo é muito pesado.-->
+
+        <p>Infelizmente o seu navegador não consegue reproduzir áudio. <a href="Mídia/trigun.mp3">Clique aqui</a> para baixar o arquivo MP3.</p>
+
+    </audio>
+
+</body>
+
+</html>
