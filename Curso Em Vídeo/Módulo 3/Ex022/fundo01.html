@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Imagem de Fundo</title>
+
+    <style>
+
+        /*Você também pode aplicar uma imagem de fundo (ou outro fundo) através do "body".*/
+        /*Essa opção, nesse caso, só valerá para o fundo da página (não para as "divs").*/
+
+        body {
+            background-image: url('imagens/pattern004.png');
+            /*A imagem sempre é carregada, por padrão, no seu tamanho total.*/
+        }
+
+        div.quadrado {
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: lightgray;
+            width: 300px;
+            height: 300px;
+            display: inline-block;
+            /*Posiciona as "divs" uma ao lado da outra.*/
+        }
+
+        div#q1 {
+            background-color: skyblue;
+        }
+
+        div#q2 {
+            background-image: linear-gradient(to bottom, yellow, red);
+        }
+
+        div#q3 {
+            background-image: url('imagens/pattern003.png');
+            /*A imagem acima, por ser pequena, ela aparecerá várias vezes dentro da caixa da "div". Agora, vejamos com uma imagem maior:*/
+            
+            /*background-image: url('imagens/wallpaper002.jpg');*/
+            /*A imagem acima, agora, por ser muito grande, terá apenas um pequeno pedaço de si mostrado na caixa da "div".*/
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="quadrado" id="q1"></div>
+
+    <div class="quadrado" id="q2"></div>
+
+    <div class="quadrado" id="q3"></div>
+
+    <!--Tome cuidado com o tamanho das imagens. Caso elas tenham uma resolução muito alta, o seu "site" ficará lento.-->
+
+</body>
+
+</html>
