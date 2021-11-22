@@ -25,11 +25,11 @@
 
             /*background-size: contain; "contain"*/
 
-            /*Faz com que a imagem seja exibida sem que ela sofra corte algum (exibição de 100%), entretanto, a medida que a tela aumenta ou diminui, as bordas da imagem serão preenchidas pelo fundo do seu site (para que assim a imagem continue apresentando 100% de preenchimento de tela).*/
+            /*O comando acima faz com que a imagem seja exibida sem que ela sofra corte algum (exibição de 100%), entretanto, a medida que a tela aumenta ou diminui, as bordas da imagem serão preenchidas pelo fundo do seu site (para que assim a imagem continue apresentando 100% de preenchimento de tela).*/
 
             background-size: over;
 
-            /*"background-size: over;" cobrirá a tela inteira - mesmo que para isso seja necessário cortar a imagem em algum ponto. O porém dessa propriedade é que a imagem não será 100% exibida a depender do tamanho da tela.*/
+            /*"background-size: over;" cobrirá a tela inteira (em teoria) - mesmo que para isso seja necessário cortar a imagem em algum ponto. O porém dessa propriedade é que a imagem não será 100% exibida a depender do tamanho da tela.*/
 
             /*Caso seja selecionada a opção "auto" ao invés de "over", a imagem de fundo se ajustará automaticamente (o que pode acabar gerando um resultado não satisfatório.)*/
 
@@ -37,7 +37,7 @@
 
             /*Caso o conteúdo do "site" seja muito grande, o fundo do seu "site" cobrirá a parte que a imagem de fundo não cobre.*/
             
-            /*Caso você use a propriedade "background-repeat: repeat;", a sua imagem será repetida quantas vezes forem necessárias para não deixar o fundo "vazar" - provavelmente, haverão descontinuidades na imagem caso nada seja feito.*/
+            /*Caso você use a propriedade "background-repeat: repeat;", a sua imagem será repetida quantas vezes forem necessárias, assim o fundo não "vazará", porém, provavelmente, haverão descontinuidades na imagem caso nada seja feito.*/
         }
 
         main {
@@ -55,7 +55,7 @@
 
 <body>
     
-    <main> <!--"main" é um "div semântica". | "div" significa "divisão".-->
+    <main> <!--"main" é uma "div semântica". | "div" significa "divisão".-->
 
         <h1>Teste de Imagem de Fundo</h1>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, odit enim quae perferendis impedit, sed rem aliquam corporis dolor vero, sint debitis quis ab ipsa ducimus voluptatibus laborum cum obcaecati! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus nostrum sed quibusdam, commodi a minus quae eos! Quod blanditiis nihil odio sapiente. Culpa numquam doloribus debitis corporis, voluptates ipsam quam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto consequuntur ducimus amet id distinctio quod. Ab illo similique perferendis quaerat officiis corrupti voluptas quo, necessitatibus ratione id. Non, consequuntur odio!</p>
