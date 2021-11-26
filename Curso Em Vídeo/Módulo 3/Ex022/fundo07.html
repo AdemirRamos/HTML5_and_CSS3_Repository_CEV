@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+
+    <style>
+
+        #container {
+            background-image: url('Imagens/target001.png');
+            background-size: 100% 100%;
+            background-color: purple;
+            height: 96vh;
+            padding: 10px;
+            position: relative;
+            /*Naturalmente, esse elemento já é naturalmente relativo, por isso, o usa dessa "tag" é facultativo.*/
+            /*No HTML, por padrão, todo posicionamento de um "box" é relativo.*/
+        }
+
+        #conteúdo {
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            background-image: url('Imagens/target001.png');
+            background-size: 100% 100%;
+            /*margin: auto; -> centraliza o conteúdo horizontalmente.*/
+
+            position: absolute;
+            /*Ao usar o parâmetro acima, você pode, então, usar os seguintes parâmetros (para alinhamento vertical e horizontal).*/
+
+            left: 50%;
+            top: 50%;
+            /*Os comandos acima vão, com base nos parâmetros e valores informados, mudar o posicionamento do da "tag" de "id conteúdo".*/
+            /*Os valores acima também pode ser configurados com porcentagens (além de px).*/
+            
+            transform: translate(-50%, -50%);
+            /*O parâmetro acima serve para se mexer com qualquer caixa aplicando a ela alguma alteração de transformação.*/
+            /*O valor do parâmetro acima nos permite alterar a posição do "#conteúdo".*/
+            /*Os valores dentro de "translate()" definem a posição do elemento. Os valores podem ser positivos ou negativos.*/
+            /*Esses valores (de "translate()"), também podem ser usados como porcentagens (além de px).*/
+            /*Os dois valores de alinhamento devem ser separados por vírgula.*/
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <section id="container">
+
+        <article id="conteúdo">
+
+            <!--Quando uma centralização for vertical, será necessária a presença de um container e um conteúdo.-->
+
+        </article>
+
+    </section>
+
+</body>
+
+</html>
