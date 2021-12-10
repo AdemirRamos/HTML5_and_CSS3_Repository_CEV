@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            border-collapse: collapse;
+            /*A propriedade acima diz respeito ao espaçamento entre as bordas da tabela.*/
+            /*O valor padrão é "separate" (bordas separadas umas das outras).*/
+            border: 1px solid red;
+        }
+
+        tr {
+            color: coral;
+            text-shadow: 1px 1px 1px black;
+            font-size: 18px;
+        }
+
+        tr.linha {
+            background-color: skyblue;
+        }
+
+        td.dado {
+            background-color: darkslateblue;
+        }
+
+        tr:hover {
+            background-color: burlywood;
+        }
+
+        td:hover {
+            background-color: skyblue;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <h1>Minha Primeira Tabela</h1>
+
+    <!--Hierarquia de tabelas simples:-->
+
+    <!--1ª: "table": tabela;-->
+
+    <!--Dentro de "table" temos: "table rows" (tr);-->
+
+    <!--2ª: "table rows": linha de tabela;-->
+
+    <!--Dentro de "table rows" temos: "table header" (th);-->
+
+    <!--3ª: "table header": cabeçalho de tabela;-->
+
+    <!--Dentro de "table header" temos: "table data" (td);-->
+
+    <!--4ª: "table division": divisão / células da tabela.-->
+
+    <!--P. S.: Caso os dados preenchendo a tabela não respeitem a hierarquia, eles podem aparecer antes ou depois da sua tabela.-->
+
+    <table>
+
+        <tr id="first_line"> <!--1ª Linha;--> <!--As "tags td", a partir do HTML5, tem o seu fechamento facultativo.-->
+
+            <td class="dado">A1
+            <td class="dado">B1
+            <td class="dado">C1
+
+        </tr>
+
+        <tr class="linha"> <!--2ª Linha;-->
+
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+
+        </tr>
+
+        <tr> <!--3ª Linha;-->
+
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+
+        </tr>
+
+        <tr> <!--4ª Linha;-->
+
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
