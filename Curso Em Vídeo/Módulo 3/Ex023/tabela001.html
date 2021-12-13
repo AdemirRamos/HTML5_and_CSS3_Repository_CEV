@@ -14,6 +14,7 @@
 
         table {
             width: 400px;
+            height: 400px;
             border-collapse: collapse;
             /*A propriedade acima diz respeito ao espaçamento entre as bordas da tabela.*/
             /*O valor padrão é "separate" (bordas separadas umas das outras).*/
@@ -45,6 +46,12 @@
         td {
             border: 1px solid black;
             padding: 8px;
+            text-align: center; /*Alinhamento horizontal.*/
+            vertical-align: middle; /*Alinhamento vertical.*/
+        }
+
+        .número {
+            text-align: right;
         }
 
     </style>
@@ -101,9 +108,9 @@
 
         <tr> <!--4ª Linha;-->
 
-            <td>A4</td>
-            <td>B4</td>
-            <td>C4</td>
+            <td class="número"><del>A</del> 4</td>
+            <td class="número"><del>B</del> 4</td>
+            <td class="número"><del>C</del> 4</td>
 
         </tr>
 
