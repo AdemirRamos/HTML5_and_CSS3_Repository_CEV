@@ -31,6 +31,16 @@
             text-align: right;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+            border-top: 1px solid black;
+            border-right: 1px solid black;
+            border-left: 1px solid black;
+        }
+
     </style>
 
 </head>
@@ -47,15 +57,24 @@
 
     <!--Dentro de "table footer" podemos ter: "tr", "td", th.-->
 
+    <!--Caption: Legenda da tabela.-->
+
     <table>
+
+        <caption>População Das Unidades Federativas</caption>
 
         <thead>
 
             <tr>
 
-                <th>Estado</th>
-                <th>População</th>
-                <th>Porcentagem</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
+                <th scope="col">Porcentagem</th>
+
+                <!--O parâmetro "scope" define a qual escopo pertence cada "th". Nesse caso, ao escopo de suas respectivas colunas.-->
+
+                <!--Ao definir uma largura para um campo da tabela de maneira "CSS inline", os demais campos serão reajustados.-->
+                <!--Isso se deve ao fato de que os demais campos já tiveram suas larguras definidas por CSS incorporado.-->
 
             </tr>
 
@@ -93,15 +112,21 @@
 
             <tr>
 
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td><strong>Muita Gente!</strong></td>
                 <td>Any %</td>
+
+                <!--Aqui, o "th", pertence ao escopo da linha.-->
 
             </tr>
 
         </tfoot>
 
         <!--Mesmo que "tfoot" não esteja posicionado no final da tabela (caso esteja no meio ou no começo), na hora de renderizar a tabela, ele irá para o final da tabela automaticamente.-->
+        
+        <!--O mesmo vale para "caption".-->
+    
+        <!--A semântica, na hora de construir tabelas, é importante para que os mecanismos de busca achem com facilidade alguma informação em especial.-->
 
     </table>
 
