@@ -31,6 +31,27 @@
             text-align: right;
         }
 
+        tbody > tr:nth-child(2n) {
+            /*Checar.*/
+            /*O efeito será aplicado de 2 em 2 "trs".*/
+            /*Ao invés de "2n", também poderíamos usar "even" (par) e "odd" (ímpar).*/
+            /*Com a configuração descrita acima, as configurações só seriam feitas em linhas ímpares ou pares.*/
+            /*Outra possibilidade de configuração seria "2n - 1": a partir da primeira linha, teríamos um efeito "zebrado".*/
+            /*"2n - 1" == "odd"; "2n" == "even".*/
+            background-color: lightgray;
+        }
+
+        tbody > tr:hover {
+            background-color: burlywood;
+        }
+
+        tbody > tr > td:hover {
+            background-color: skyblue;
+            color: coral;
+            font-weight: bolder;
+            text-shadow: 1px 1px 1px black;
+        }
+
         caption {
             font-size: 1.5em;
             font-weight: bold;
