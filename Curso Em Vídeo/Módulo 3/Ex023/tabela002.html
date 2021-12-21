@@ -8,6 +8,8 @@
 
     <style>
 
+        /*Os cabeçalhos de tabela fixos só funcionam com tabelas grandes.*/
+
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
@@ -15,6 +17,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -29,6 +32,13 @@
 
         td.número {
             text-align: right;
+        }
+
+        thead > tr > th {
+            position: sticky; /*Checar.*/
+            top: -1px;
+            background-color: gray;
+            /*As configurações acima fixam o cabeçalho da sua tabela (desde que ela seja grande).*/
         }
 
         tbody > tr:nth-child(2n) {
