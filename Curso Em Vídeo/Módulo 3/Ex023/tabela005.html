@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabelas</title>
+
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .destaque {
+            background-color: cadetblue;
+        }
+
+        col.sexo {
+            background-color: chocolate;
+        }
+
+        .grupo {
+            background-color: darkcyan;
+        }
+
+        col.profissão {
+            background-color: chocolate;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <h1>Exercício de Tabelas</h1>
+
+    <table>
+
+        <!--Se pode colocar a "tag colgroup" em qualquer parte da tabela.-->
+
+        <!--Se adiciona uma "tag col" para cada coluna que se deseja alterar.-->
+
+        <colgroup>
+        
+            <col class="destaque">
+            
+            <!--<col class="sexo">-->
+            <!--<col class="destaque">-->
+            
+            <!--Outra maneira de se aplicar uma mesma configuração a mais de uma coluna:-->
+
+            <col class="grupo" span="2"> <!--O "span='2'" representa o número de colunas selecionadas.-->
+
+            <!--Também através das classes, é possível se aplicar um efeito "zebrado".-->
+            <!--Basta aplicar uma configuração (usando "class") a uma coluna e à coluna abaixo outra configuração diferente.-->
+
+            <col class="profissão">
+        
+        </colgroup>
+
+        <caption>Cadastro</caption>
+
+        <tr>
+
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+
+        </tr>
+
+        <tr>
+
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Demi</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Programadora</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Fernando</td>
+            <td>M</td>
+            <td>34</td>
+            <td>Médico</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Carlos</td>
+            <td>M</td>
+            <td>26</td>
+            <td>Bombeiro</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Clara</td>
+            <td>F</td>
+            <td>32</td>
+            <td>Veterinária</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Geovana</td>
+            <td>F</td>
+            <td>40</td>
+            <td>Enfermeira</td>
+
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
