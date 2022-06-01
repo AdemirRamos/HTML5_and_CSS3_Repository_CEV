@@ -6,23 +6,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de "iframe"</title>
 
+    <style>
+
+        .frame {
+            height: 400px;
+            width: 400px;
+            border: 1px dotted red;
+        }
+
+    </style>
+
 </head>
 
 <body>
     
     <h1>Testando o uso de um "iframe"</h1>
-    <p>Acessando o site do <iframe src="https://www.cursoemvideo.com" frameborder="0"></iframe> para aprender a programar.</p>
+    
+    <p>
+        
+        Acessando o site do
+        
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" height="500" scrolling="no">
+
+            Para acessar o site, clique <a href="https://www.cursoemvideo.com" target="_blank">aqui</a>!
+
+        </iframe>
+
+        para aprender a programar.
+    
+    </p>
 
     <!--"iframe" significa "inline-frame" ("quadro-em-linha").-->
     <!--"iframe's" possuem "display inline".-->
     <!--A propriedade "frambeborder" controla a borda do "iframe"; se o seu valor for igual a 0, o "iframe" não terá borda.-->
     <!--O "iframe" funciona como uma nova aba/instância do navegador, porém dentro da página.-->
 
-    <p>O site do <iframe src="https://www.google.com" frameborder="0"></iframe> é muito legal!</p>
+    <p>
+        
+        O site do
+
+        <iframe src="https://www.google.com" frameborder="0" height="500" width="500" scrolling="yes">
+
+            Para acessar o site, clique <a href="https://www.google.com" target="_blank">aqui</a>!
+
+        </iframe>
+        
+        é muito legal! (Pena que não funciona com "iframes".)
+    
+    </p>
 
     <!--Alguns sites possuem uma proteção que impede que eles sejam exibidos por "iframe's" - o site do Google, por exemplo.-->
     <!--Uma das razões para isso, se deve ao fato de "iframe's" possuírem algumas fragilidades em termos de segurança.-->
     <!--Porém, graças ao HTML5, algumas dessas fragilidades podem ser amenizadas ou eliminadas.-->
+
+    <p>
+        O repositório do Guanabara
+
+        <iframe src="https://gustavoguanabara.github.io" frameborder="1" class="frame" scrolling="auto">
+            
+            O seu navegador não tem suporte ao "iframe". <br>
+            Para acessar o repositório, clique <a href="https://gustavoguanabara.github.io" target="_blank">aqui</a>!
+
+        </iframe>
+
+        também é muito legal!
+
+    </p>
+
+    <!--Nem todos os navegadores de dispositíveis móveis (celulares) têm suporte ao "iframe's".-->
+    <!--Dentro da "tag iframe" vai o conteúdo que será mostrado caso o navegador do usuário não tenha suporte ao "iframe".-->
+    <!--Tamanho padrão do "iframe": 300 (altura) x 150 (largura) px.-->
+    <!--A "tag iframe" possui as propriedades "height" e "width" que nos permitem alterar o tamanho e largura do "iframe".-->
+    <!--O CSS tem prioridade sobre as propriedades "height" e "width" (da "tag iframe").-->
+    <!--A "tag iframe" também tem o parâmetro "scrolling" que é equivalente ao "scroll" do CSS.-->
+    <!--Valores de "scrolling": "auto" (barras de rolagens se necessárias); "yes" (barra de rolagem fixa); "no" (sem barra de rolagem).-->
+    <!--Já o parâmetro "frameborder" aceita dois valores: 0 (sem borda); qualquer valor maior do que 0 (com borda).-->
+    <!--Para personalizar essa borda (mencionada no comentário acima), basta usar a propriedade "border" (via CSS).-->
 
 </body>
 
