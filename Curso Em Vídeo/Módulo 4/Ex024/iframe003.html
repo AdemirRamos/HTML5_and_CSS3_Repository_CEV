@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframe</title>
+
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #tela {
+            width: 95vh;
+            height: 400px;
+            border: 2px solid black;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <h1>Faça Uma Escolha:</h1>
+    
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis asperiores earum placeat corrupti hic pariatur officia beatae animi vero provident suscipit fugiat officiis dicta impedit atque, ipsa ut dignissimos consequuntur. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae sapiente quod modi totam impedit. Sit itaque sunt nostrum ratione quas amet beatae nam ullam tenetur, nulla atque excepturi aspernatur laborum.</p>
+
+    <ul>
+
+        <!--Para carregar o conteúdo de uma "tag a" dentro de um "iframe", na "tag a", é preciso ter um parâmetro "target".-->
+        <!--Por fim, basta atribuir como valor do referido "target" o "name" dado ao "iframe".-->
+
+        <li><a href="Páginas Extras/página001.html" target="quadro">Primeira Página</a></li>
+        <li><a href="iframe002.html" target="quadro">Segunda Página</a></li>
+        <li><a href="iframe003.html" target="quadro">Terceira Página</a></li>
+
+    </ul>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos suscipit, esse ipsum corrupti incidunt voluptas excepturi aspernatur harum totam nobis dolorem architecto ad, optio natus, nam reprehenderit. Illum, sit impedit? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium quae incidunt qui ex ad minus, aspernatur alias tempore laboriosam repellendus dicta neque possimus eveniet nam maxime aliquam at aliquid. Ipsum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum nesciunt pariatur a quidem. Deserunt vero beatae inventore laboriosam, totam dignissimos quo obcaecati dolorum architecto molestiae necessitatibus impedit, mollitia odit voluptate?</p>
+
+    <!--Já no "iframe" onde o endereço da "tag a" será carregado, é preciso um parâmetro "name".-->
+
+    <iframe src="" frameborder="1" id="tela" name="quadro">
+
+        <p>Infelizmente o seu navegador não é compatível com "iframe's".</p>
+
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptates dignissimos dolorum sequi iste deleniti totam id, laboriosam sapiente, labore praesentium voluptatum repudiandae sit doloremque quas, dolores accusamus soluta quasi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, repellat. Ratione, esse nisi praesentium nemo at similique vero. Similique neque, accusamus numquam excepturi vitae quibusdam modi sunt recusandae asperiores consequatur?</p>
+
+</body>
+
+</html>
