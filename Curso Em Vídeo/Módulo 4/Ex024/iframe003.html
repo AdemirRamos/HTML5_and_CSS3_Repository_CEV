@@ -43,7 +43,10 @@
 
     <!--Já no "iframe" onde o endereço da "tag a" será carregado, é preciso um parâmetro "name".-->
 
-    <iframe src="" frameborder="1" id="tela" name="quadro">
+    <!--O parâmetro "srcdoc" nos permite escrever códigos HTML.-->
+    <!--Apesar d'as aberturas das "tags" ficarem vermelhas, o código, se escrito corretamente, funcionará independentemente disso.-->
+
+    <iframe srcdoc="<h1>Escolha Uma Das Opções Acima</h1> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum vero voluptate corporis iure, cum reiciendis est, voluptas perferendis, quisquam consectetur eum animi. Repellendus eos saepe dolorum fugiat odio consequuntur ipsa.</p> <img src='./Imagens/html.png'></img>" src="" frameborder="1" id="tela" name="quadro">
 
         <p>Infelizmente o seu navegador não é compatível com "iframe's".</p>
 
