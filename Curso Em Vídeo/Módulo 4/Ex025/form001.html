@@ -14,7 +14,7 @@
 		}
 
 		h1 {
-			padding: 15px;
+			padding: 15px 15px 15px 5px;
 		}
 
 		p {
@@ -48,10 +48,26 @@
 	
 	<h1>Meu Primeiro Formulário</h1>
 
-	<form>
-		
-		<p>Nome: <input type="text" name="nome"></p>
-		<p class="top">Sobrenome: <input type="text" name="sobrenome"></p>
+	<form autocomplete="off" action="cadastro.php">
+
+		<!--A opção "autocomplete" com o valor "off" desliga o autopreenchimento de um formulário.-->
+		<!--O atributo "action" será disparado quando o botão "submit" for clicado;-->
+		<!--Lá (no destino indicado em "action"), indicamos o arquivo PHP que vai trabalhar com o formulário apresentado.-->
+		<!--P. S.: Além do PHP, podemos usar outras linguagens de programação para trabalhar com esses dados.-->
+
+		<p><label for="inome">Nome: </label><input type="text" name="nome" id="inome"></p>
+		<p class="top"><label for="isobrenome">Sobrenome: </label><input type="text" name="sobrenome" id="isobrenome"></p>
+
+		<!--Os nomes precedentes aos "input's" não estão ligados, por definição, a esses "input's";-->
+		<!--Para estabelecer essa conexão, devemos usar "labels".-->
+		<!--O parâmetro "for" de "label" serve para indicar um "id".-->
+		<!--Após a aplicação de um "for" e de seu "id", clicar no "label" já foca no "input" correspondente.-->
+		<!--Além de estabelecer uma ligação entre os referidos "for" e "input's".-->
+
+		<!--Diferença entre "name" e "id":-->
+		<!--Para que o PHP funcione perfeitamente, é preciso que todo objeto de entrada tenha um nome.-->
+		<!--Para linguagens como o JS, o "id" se faz mais importante.-->
+
 		<input type="submit" name="" value="Enviar" class="submit"></input>
 
 	</form>
