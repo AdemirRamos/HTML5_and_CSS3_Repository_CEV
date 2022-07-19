@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Teste de Formulário</title>
+
+	<style type="text/css">
+		
+		.espaço {
+			margin-top: 15px;
+		}
+
+		.pad {
+			margin-right: 10px;
+		}
+
+		.linha {
+			display: inline-block;
+		}
+
+		.botão {
+			border-radius: 15px;
+			background-color: purple;
+			color: white;
+			padding: 15px;
+		}
+
+		.botão:hover {
+			cursor: pointer;
+			background-color: white;
+			color: purple;
+		}
+
+		.reset {
+			border-radius: 15px;
+			background-color: red;
+			color: white;
+			padding: 15px;
+		}
+
+		.reset:hover {
+			cursor: pointer;
+			background-color: white;
+			color: red;
+		}
+
+	</style>
+
+</head>
+
+<body>
+	
+	<h1>Teste de Formulário</h1>
+
+	<form action="" method="post" autocomplete="on">
+		
+		<div>
+
+			<label for="usuário_id" class="pad">Usuário:</label>
+			<input type="text" name="usuário" id="usuário_id" required minlength="1" maxlength="10" size="10" placeholder="Nome">
+
+		</div>
+
+		<div class="espaço">
+
+			<label for="sobrenome_id" class="pad">Sobrenome:</label>
+			<input type="text" name="sobrenome" id="sobrenome_id" size="10" autocomplete="username">
+
+		</div>
+
+		<div class="espaço">
+
+			<label for="senha_id" class="pad">Senha:</label>
+			<input type="password" name="senha" id="senha_id" required minlength="4" maxlength="8" size="10" placeholder="Senha">
+
+		</div>
+
+		<div class="espaço linha">
+
+			<input type="submit" name="enviar" value="Enviar" class="botão"></input>
+
+		</div>
+
+		<div class="linha">
+
+			<input type="reset" name="limpar" value="Limpar" class="reset">
+
+		</div>
+
+		<!--O botão do tipo "reset" limpa os "input's" do formulário.-->
+		<!--O atributo "required" torna a "tag" que o recebe de preenchimento obrigatório.-->
+		<!--Já o atributo "minlength" determina o número mínimo de caracteres.-->
+		<!--Já "maxlength" faz o oposto de "minlength".-->
+		<!--O atributo "size" aumenta ou diminui o tamanho de uma caixa de "input".-->
+		<!--P. S.: "size" diz respeito o comprimento das letras: size="10" === comprimento de 10 letras.-->
+		<!--O atributo "placeholder" serve para escrever algo que ocupará uma caixa até que o usuário a preencha.-->
+		<!--Os "placeholders" podem ser usados para passar dicas quanto ao preenchimento de campos.-->
+		<!--O atributo "autocomplete" pode ser usado tanto no formulário quanto nos campos do formulários (mas há diferenças).-->
+		<!--No caso do formulário, somente os valores "on" e "off" são aceitos; com os campos do formulário, há várias opções.-->
+
+	</form>
+
+</body>
+
+</html>
