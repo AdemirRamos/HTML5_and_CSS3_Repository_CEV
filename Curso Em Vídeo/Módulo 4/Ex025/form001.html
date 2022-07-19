@@ -48,12 +48,23 @@
 	
 	<h1>Meu Primeiro Formulário</h1>
 
-	<form autocomplete="off" action="cadastro.php">
+	<form autocomplete="off" action="cadastro.php" method="post">
 
 		<!--A opção "autocomplete" com o valor "off" desliga o autopreenchimento de um formulário.-->
 		<!--O atributo "action" será disparado quando o botão "submit" for clicado;-->
 		<!--Lá (no destino indicado em "action"), indicamos o arquivo PHP que vai trabalhar com o formulário apresentado.-->
 		<!--P. S.: Além do PHP, podemos usar outras linguagens de programação para trabalhar com esses dados.-->
+
+		<!--O método padrão de envio de formulários é o método "get".-->
+		<!--Em "method", "get" e "post" podem ser escritos tanto com letras maiúsculas quanto com letras minúsculas.-->
+		<!--Dentro do "devtools", em "network" e em "headers", é possível achar os dados passados com o método "post".-->
+		<!--Se deve usar "get" quando não se for manipular "dados sensíveis" (senhas e afins); e "post" nos demais casos.-->
+		<!--Caso se deseje que uma URL seja compartilhável, recomenda-se o uso do método "get".-->
+		<!--Ao se enviar dados com o método "get", o limite de dados é de 3000 bytes.-->
+		<!--P. S.: 3000 bytes é equivalente a 3000 letras.-->
+		<!--O método "get" também não pode ser usado com o envio de arquivos (fotos, vídeos, et cetera).-->
+		<!--No caso do envio de arquivos (fotos, vídeos, et cetera) ou mesmo no caso de dados sensíveis, recomenda-se "post".-->
+		<!--Antigamente, haviam discussões sobre a velocidade de "get" e "post", mas, hoje em dia, essa diferença é desprezível.-->
 
 		<p><label for="inome">Nome: </label><input type="text" name="nome" id="inome"></p>
 		<p class="top"><label for="isobrenome">Sobrenome: </label><input type="text" name="sobrenome" id="isobrenome"></p>
