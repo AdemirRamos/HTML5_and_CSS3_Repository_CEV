@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Teste de Formulários</title>
+
+	<style type="text/css">
+		
+		.div-final {
+			margin-left: 11px;
+		}
+
+		div {
+			margin: 15px;
+		}
+
+		.enviar {
+			background-color: white;
+			color: darkslateblue;
+			padding: 15px;
+			border-radius: 15px;
+		}
+
+		.enviar:hover {
+			cursor: pointer;
+			background-color: darkslateblue;
+			color: white;
+		}
+
+		.limpar {
+			background-color: white;
+			color: red;
+			padding: 15px;
+			border-radius: 15px;
+		}
+
+		.limpar:hover {
+			cursor: pointer;
+			background-color: red;
+			color: white;
+		}
+
+	</style>
+
+</head>
+
+<body>
+	
+	<h1>Exemplo de Formulário</h1>
+
+	<form action="" method="get" autocomplete="on">
+
+		<legend>Dados Pessoais</legend>
+
+		<fieldset>
+
+			<div>
+				
+				<label for="nome_id">Nome:</label>
+				<input type="text" name="nome" id="nome_id" minlength="5" maxlength="20">
+
+			</div>
+			
+			<div>
+				
+				<label for="email_id">E-mail:</label>
+				<input type="email" name="email" id="email_id" autocomplete="email">
+
+				<!--O "autocomplete" com o valor "email" também faz uma pequena validação do valor passado para o "input" que o recebe.-->
+
+			</div>
+
+			<div>
+				
+				<label for="telefone_id">Telefone:</label>
+				<input type="tel" name="telefone" id="telefone_id" autocomplete="tel" required pattern="!\(\d{2}\)\d{4,5}-\d{4,5}$" placeholder="(xx)xxxx-xxxx">
+
+				<!--O "input tel" tem uma compatibilidade adicional com aparelhos e dispositivos telefones;-->
+				<!--Graças a isso, ele ("input tel") pode, também, puxar a lista de contatos do telefone cadastrado.-->
+				<!--Não há muitos filtros de validação para "tel".-->
+				<!--O atributo "pattern" possibilita o uso de Expressões Regulares.-->
+				<!--Toda expressão regular começa com uma exclamação e termina com um cifrão.-->
+				<!--Digitos podem ser representados de duas maneiras (sem aspas): 1) "\d" ou 2) [0-9]{quantidade de números}.-->
+				<!--"\d{4,5}": de quatro a cinco digitos.-->
+				<!--"\(\d{2}\)": DDD.-->
+				<!--A "tag fieldset" permite fazer agrupamentos de diferentes campos.-->
+				<!--A "tag legend" funciona como uma legenda para o seu "fieldset".-->
+
+			</div>
+
+			<div class="div-final">
+				
+				<input type="submit" name="enviar" value="Enviar" class="enviar">
+				<input type="reset" name="limpar" value="Limpar" class="limpar">
+
+			</div>
+
+		</fieldset>
+
+	</form>
+
+</body>
+
+</html>
