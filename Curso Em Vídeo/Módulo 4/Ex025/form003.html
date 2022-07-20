@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Teste de Formulário</title>
+
+	<style type="text/css">
+		
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		.div1 {
+			margin: 15px;
+		}
+
+		.div2 {
+			margin: 15px;
+		}
+
+		.div3 {
+			margin: 0px 0px 15px 15px;
+			display: inline-block;
+		}
+
+		.div4 {
+			margin: 0px 15px 15px 5px;
+			display: inline-block;
+		}
+
+		.div5 {
+			margin: 15px;
+		}
+
+		.enviar {
+			background-color: white;
+			color: darkslateblue;
+			padding: 15px;
+			border-radius: 15px;
+		}
+
+		.enviar:hover {
+			cursor: pointer;
+			background-color: darkslateblue;
+			color: white;
+		}
+
+		.limpar {
+			background-color: white;
+			color: red;
+			padding: 15px;
+			border-radius: 15px;
+		}
+
+		.limpar:hover {
+			cursor: pointer;
+			background-color: red;
+			color: white;
+		}
+
+	</style>
+
+</head>
+
+<body>
+	
+	<form action="" method="get" autocomplete="on">
+		
+		<div class="div1">			
+
+			<label for="nome_id">Nome:</label>
+			<input type="text" name="nome" id="nome_id" required maxlength="30" placeholder="Nome completo" autocomplete="name">
+
+		</div>
+
+		<div class="div2">
+
+			<label for="senha_id">Senha:</label>
+			<input type="password" name="senha" id="senha_id" placeholder="Senha aqui" required>
+
+		</div>
+
+		<div class="div5">
+			
+			<label for="média_id">Média:</label>
+			<input type="number" name="média" id="média_id" min="0" max="10" step="0.5" required value="5">
+
+			<!--O "input" do tipo "number" aceita somente números; o "input" do tipo "text" aceita números e letras.-->
+			<!--Para um "input" do tipo "number", os atributos para delimitar os valores são "min" e "max".-->
+			<!--O parâmetro "step" indica o nível de variação de um número para outro em um "input number".-->
+			<!--Valores permitidos vistos nesta aula: 0.1 e 0.5.-->
+			<!--Nota: nem todos os atributos funcionam com todos os controles.-->
+			<!--Recomenda-se evitar acentuação ao se atribuir valores ao atributos.-->
+			<!--O atributo "value" serve para determinar o valor padrão de um "input".-->
+			<!--No caso acima, o "value" faz com que o "placeholder" suma do "input".-->
+
+		</div>
+
+		<div class="div5">
+			
+			<label for="mês_id">Período Letivo:</label>
+			<input type="month" name="mês" id="mês_id" value="2022-07">
+
+		</div>
+
+		<div class="div5">
+			
+			<label for="prova_id">Dia da Prova:</label>
+			<input type="date" name="prova" id="prova_id">
+
+			<!--O "input date" já vem com alguns minifiltros.-->
+
+		</div>
+
+		<div class="div5">
+			
+			<label for="hora_id">Hora da Prova:</label>
+			<input type="time" name="hora" id="hora_id">
+
+		</div>
+
+		<div class="div3"><input type="submit" name="enviar" value="Enviar" class="enviar"></div>
+		<div class="div4"><input type="reset" name="limpar" value="Limpar" class="limpar"></div>
+
+	</form>
+
+</body>
+
+</html>
