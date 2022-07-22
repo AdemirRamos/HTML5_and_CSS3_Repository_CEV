@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulário</title>
+
+	<style type="text/css">
+		
+		.marginTop {
+			margin-top: 15px;
+		}
+
+		.marginTop2 {
+			margin-top: 5px;
+		}
+
+		.marginBottom {
+			margin-bottom: 5px;
+		}
+
+		.marginBottom2 {
+			margin-bottom: 15px;
+		}
+
+		.caixa-input {
+			display: block;
+		}
+
+		input > span {
+			margin-left: 5px;
+		}
+
+	</style>
+
+</head>
+
+<body>
+	
+	<h1>Exemplo de Formulário</h1>
+
+	<form action="" method="get" autocomplete="on">
+	
+		<fieldset>
+			
+			<legend>Esporte Favoritos:</legend>
+
+			<div class="caixa-input marginBottom marginTop2"><input type="checkbox" name="futebol" id="futebol_id">
+				
+				<label for="futebol_id">Futebol</label>
+
+				<!--Através do parâmetro "for", em "label", é possível marcar uma "checkbox" ao clicar no seu "label" respectivo.-->
+
+			</div>
+
+			<div class="caixa-input marginBottom"><input type="checkbox" name="basquete" id="basquete_id">
+
+				<label for="basquete_id">Basquete</label>
+
+			</div>
+
+			<div class="caixa-input marginBottom"><input type="checkbox" name="natação" id="natação_id">
+
+				<label for="natação_id">Natação</label>
+
+			</div>
+
+			<div class="caixa-input marginBottom"><input type="checkbox" name="tênis" id="tênis_id">
+
+				<label for="tênis_id">Tênis</label>
+
+			</div>
+
+		</fieldset>
+
+		<fieldset>
+			
+			<legend>Sexo</legend>
+
+			<!--Para que se possa marcar e desmarcar um "input" do tipo "radio", é preciso que todos tenham o mesmo "name".-->
+
+			<div class="caixa-input marginTop2 marginBottom2">
+
+				<input type="radio" name="sexo" id="masculino_id" value="masculino"><label for="masculino_id">Masculino</label>
+
+			</div>
+
+			<div class="caixa-input">
+
+				<input type="radio" name="sexo" id="feminino_id" value="feminino" checked><label for="feminino_id">Feminino</label>
+
+				<!--O parâmetro "checked" faz com que o elemento que o receba já inicie a página marcado.-->
+				<!--Em "input's" do tipo "radio" não é possível usar "checked" com mais de um "input" ao mesmo tempo.-->
+				<!--Em "input's" do tipo "checked" o caso do comentário acima é possível.-->
+				<!--E necessário adicionar um "value" para os "input's radio";-->
+				<!--Assim, através de "value", será possível distinguir os "input's radio".-->
+
+			</div>
+
+		</fieldset>
+
+		<input type="submit" name="enviar" value="Enviar" class="marginTop">
+		<input type="reset" name="limpar" value="Limpar" class="marginTop">
+
+	</form>
+
+</body>
+
+</html>
