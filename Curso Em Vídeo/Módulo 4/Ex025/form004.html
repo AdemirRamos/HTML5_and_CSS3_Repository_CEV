@@ -67,20 +67,29 @@
 				<label for="email_id">E-mail:</label>
 				<input type="email" name="email" id="email_id" autocomplete="email">
 
-				<!--O "autocomplete" com o valor "email" também faz uma pequena validação do valor passado para o "input" que o recebe.-->
+				<!--O "autocomplete email" também faz uma pequena validação do valor passado para o "input" que o recebe.-->
 
 			</div>
 
 			<div>
 				
 				<label for="telefone_id">Telefone:</label>
-				<input type="tel" name="telefone" id="telefone_id" autocomplete="tel" required pattern="!\(\d{2}\)\d{4,5}-\d{4,5}$" placeholder="(xx)xxxx-xxxx">
+
+				<input
+					type="tel"
+					name="telefone"
+					id="telefone_id"
+					autocomplete="tel"
+					required
+					pattern="^\(\d{2}\)\d{4,5}-\d{4}$"
+					placeholder="(xx)xxxx-xxxx"
+					>
 
 				<!--O "input tel" tem uma compatibilidade adicional com aparelhos e dispositivos telefones;-->
 				<!--Graças a isso, ele ("input tel") pode, também, puxar a lista de contatos do telefone cadastrado.-->
 				<!--Não há muitos filtros de validação para "tel".-->
 				<!--O atributo "pattern" possibilita o uso de Expressões Regulares.-->
-				<!--Toda expressão regular começa com uma exclamação e termina com um cifrão.-->
+				<!--Toda expressão regular começa com um acento circumflexo e termina com um cifrão.-->
 				<!--Digitos podem ser representados de duas maneiras (sem aspas): 1) "\d" ou 2) [0-9]{quantidade de números}.-->
 				<!--"\d{4,5}": de quatro a cinco digitos.-->
 				<!--"\(\d{2}\)": DDD.-->
