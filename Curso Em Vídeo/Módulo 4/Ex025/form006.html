@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulário</title>
+
+	<style type="text/css">
+		
+		.block {
+			display: block;
+		}
+
+		.marginBottom {
+			margin-bottom: 15px;
+		}
+
+		.marginRight {
+			margin-right: 5px;
+		}
+
+	</style>
+
+</head>
+
+<body>
+	
+	<form action="" method="post" autocomplete="on">
+		
+		<!--Todos os "input's", vistos abaixo, podem ou não funcionar - a depender do navegador do usuário.-->
+
+		<div class="block marginBottom">
+
+			<!--O parâmetro "value" nos permite definir uma cor padrão (em hexadecimal, a cor não pode ser abrevidada: "#f00"):-->
+
+			<label for="cor_id" class="marginRight">Selecione uma cor:</label>
+			<input type="color" name="cor" id="cor_id" value="#ff0000">
+
+
+		</div>
+
+		<div class="block marginBottom">
+			
+			<!--É possível definir um limite mínimo e um máximo para o "range":-->
+			<!--Já o parâmetro "value" nos permite definir o valor padrão para o "range":-->
+
+			<label for="range_id" class="marginRight">Nível de Satisfação:</label>
+			<input type="range" name="range" id="range_id" min="1" max="50" value="25">
+
+		</div>
+
+		<div class="block marginBottom">
+			
+			<label for="arquivo_id" class="marginRight">Foto de Perfil:</label>
+			<input type="file" name="arquivo" id="arquivo_id">
+
+			<!--Através do "input image", também se pode selecionar uma foto, porém isso não pode ser feito pelo usuário.-->
+			<!--Com o envio de arquivos, não se pode usar o método "get", mas sim o método "post".-->
+
+		</div>
+
+		<div class="block">
+			
+			<input type="submit" name="enviar" value="Enviar">
+			<input type="reset" name="limpar" value="Limpar">
+
+		</div>
+
+	</form>
+
+</body>
+
+</html>
