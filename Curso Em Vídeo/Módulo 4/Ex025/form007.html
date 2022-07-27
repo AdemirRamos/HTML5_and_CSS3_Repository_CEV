@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulário</title>
+
+	<style type="text/css">
+		
+		.block {
+			display: block;
+		}
+
+		.marginBottom {
+			margin-bottom: 15px;
+		}
+
+	</style>
+
+</head>
+
+<body>
+	
+	<form action="" method="get" autocomplete="on">
+		
+		<div class="block marginBottom">
+			
+			<!--A "tag select" permite gerar um agrupamento de itens.-->
+
+			<label for="estado_id">Estado:</label>
+
+			<select name="estado" id="estado_id">
+				
+				<!--É possível criar subdivisões dentro de um "select" com a "tag optgroup":-->
+				<!--Através do atributo "label", é possível atribuir uma legenda aos subgrupos:-->
+				<!--Já o atributo "selected" indica qual será o valor-padrão selecionado.-->
+
+				<optgroup label="Região Sudeste">
+
+					<option value="" selected>--- Escolha ---</option>
+					<option value="SP">São Paulo</option>
+					<option value="RJ">Rio de Janeiro</option>
+					<option value="MG">Minas Gerais</option>
+
+				</optgroup>
+
+				<optgroup label="Região Nordeste">
+
+					<option value="RN">Rio Grande do Norte</option>
+					<option value="PE">Pernambuco</option>
+					<option value="MA">Maranhão</option>
+
+				</optgroup>
+
+			</select>
+
+		</div>
+
+		<!--"datalists" permitem, através de um "id", relacionar o seu conteúdo com um "input" (através do parâmetro "list"):-->
+		<!--Caso o atributo "value" seja removido da "datalist", ele não será apresentado ao usuário.-->
+		<!--Também é possível usar a "tag optgroup" com "datalist's".-->
+		<!--Eesse recurso (descrito acima) possibilita que o usuário preencha o campo para além das opções dadas.-->
+
+		<div class="block marginBottom">
+			
+			<label for="profissão_id">Profissão:</label>
+			<input type="text" name="profissão" id="profissão_id" list="lista_profissão">
+
+			<datalist id="lista_profissão">
+				
+				<option value="ADM">Administrador</option>
+				<option value="CONT">Contabilista</option>
+				<option value="DEV">Desenvolvedor</option>
+				<option value="PROF">Professor</option>
+
+			</datalist>
+
+		</div>
+
+		<div class="block marginBottom">
+			
+			<!--Ao se usar "textarea", o ideal é que, como método, o seu formulário use "post".-->
+			<!--A razão se dá em virtude do método "get" ter um limite quanto a quantidade de dados a serem enviados (3000 bytes).-->
+
+			<label for="mensagem_id" class="block marginBottom">Mensagem:</label>
+			<textarea name="mensagem" id="mensagem_id" cols="30" rows="10" placeholder="Escreva aqui."></textarea>
+
+		</div>
+
+		<div class="block">
+			
+			<input type="submit" name="enviar" value="Enviar">
+			<input type="reset" name="limpar" value="Limpar">
+
+		</div>
+
+	</form>
+
+</body>
+
+</html>
