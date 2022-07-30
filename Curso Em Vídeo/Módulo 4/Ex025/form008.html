@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Exemplo de Formulário</title>
+
+	<style type="text/css">
+		
+		.blcok {
+			display: block;
+		}
+
+		.marginBottom {
+			margin-bottom: 15px;
+		}
+
+		.marginRight {
+			margin-right: 5px;
+		}
+
+	</style>
+
+</head>
+
+<body>
+	
+	<form action="" method="" autocomplete="on">
+		
+		<div class="block marginBottom">
+			
+			<label for="númeroUm_id" class="marginRight">1ª Número:</label>
+
+			<input
+				type="number"
+				name="númeroUm"
+				id="númeroUm_id"
+				min="0"
+				max="50"
+				oninput="soma_id.innerHTML = Number(númeroUm_id.value) + Number(númeroDois_id.value)"
+				required
+			>
+
+			<!--O atributo "oninput" é uma espécie de "onchange()" específico para "input's" - e pode ser usado com "output".-->
+
+		</div>
+
+		<div class="block marginBottom">
+			
+			<label for="númeroDois_id" class="marginRight">2ª Número:</label>
+
+			<input
+				type="number"
+				name="númeroDois"
+				id="númeroDois_id"
+				min="0"
+				max="50"
+				oninput="soma_id.innerHTML = Number(númeroUm_id.value) + Number(númeroDois_id.value)"
+				required
+			>
+
+		</div>
+
+		<div class="block marginBottom">
+			
+			<label for="soma_id marginRight">Soma:</label>
+			<output name="soma" id="soma_id">0</output>
+
+			<!--O "output" não envia o resultado da soma (ao se clicar no botão de enviar), somente os dois valores passados.-->
+
+		</div>
+
+		<div class="block">
+			
+			<input type="submit" name="enviar" value="Enviar">
+			<input type="reset" name="limpar" value="Limpar">
+
+		</div>
+
+	</form>
+
+</body>
+
+</html>

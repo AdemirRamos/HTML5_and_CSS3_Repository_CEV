@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Exemplo de Formulário</title>
+
+	<style type="text/css">
+		
+		.blcok {
+			display: block;
+		}
+
+		.marginBottom {
+			margin-bottom: 15px;
+		}
+
+		.marginRight {
+			margin-right: 5px;
+		}
+
+	</style>
+
+</head>
+
+<body>
+	
+	<form action="" method="" autocomplete="on">
+		
+		<div class="block marginBottom">
+			
+			<label for="número_id" class="marginRight">Número:</label>
+
+			<input
+				type="range"
+				name="número"
+				id="número_id"
+				min="0"
+				max="10"
+				value="5"
+				oninput="valor.innerHTML = Number(número_id.value)"
+			>
+
+		</div>
+
+		<div class="block marginBottom">
+			
+			<label for="valor">Resultado:</label>
+			<output id="valor">5</output>
+
+		</div>
+
+		<div class="block">
+			
+			<input type="submit" name="enviar" value="Enviar">
+			<input type="reset" name="limpar" value="Limpar">
+
+		</div>
+
+	</form>
+
+</body>
+
+</html>

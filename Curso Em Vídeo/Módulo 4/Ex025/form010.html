@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Exemplo de Formulário</title>
+
+	<style type="text/css">
+		
+		.blcok {
+			display: block;
+		}
+
+		.marginBottom {
+			margin-bottom: 15px;
+		}
+
+		.marginRight {
+			margin-right: 5px;
+		}
+
+	</style>
+
+</head>
+
+<body>
+	
+	<form action="" method="" autocomplete="on">
+
+		<div class="block marginBottom">
+			
+			<label for="ano_id">Em que ano você nasceu? Selecione:</label>
+
+			<input
+				type="number"
+				name="ano"
+				id="ano_id"
+				min="1900"
+				max="2022"
+				oninput="calcular()"
+			>
+
+			<!--Uma maneira mais simples de fazer o cálculo: oninput="idade.innerHTML = Number(2022) - Number(ano_id.value)".-->
+
+		</div>
+
+		<div class="block marginBottom">
+			
+			<label for="idade">Sua idade:</label>
+			<output id="idade">0</output>
+
+		</div>
+		
+		<div class="block">
+			
+			<input type="submit" name="enviar" value="Enviar">
+			<input type="reset" name="limpar" value="Limpar">
+
+		</div>
+
+	</form>
+
+	<script type="text/javascript">
+		
+		function calcular() {
+			/*
+				Como eu resolvi:
+
+				let ano_atual = new Date().getFullYear()
+				let idade = Number(ano_atual) - Number(document.getElementById('ano_id').value)
+
+				document.getElementById('idade').innerHTML = idade
+
+			*/
+
+			//Como o Guanabara resolveu:
+
+			let ano_atual = new Date().getFullYear()
+			idade.innerHTML = Number(ano_atual) - Number(ano_id.value)
+		}
+
+	</script>
+
+</body>
+
+</html>
