@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/*Estilo para impressoras.*/
+
+* {
+	margin: 10px;
+	padding: 10px;
+}
+
+html {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 1.5em;
+	line-height: 1.5em;
+}
+
+menu {
+	display: none;
+}
+
+/*Usando a pseudoclasse "after" para posicionar a data de publicação do arquivo após "article":*/
+
+article::after {
+	/*Usando a propriedade "content" para especificar o conteúdo para a pseudoclasse "after":*/
+
+	content: "Este conteúdo foi escrito em 08/08/2022.";
+	width: 100%;
+}
