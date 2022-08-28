@@ -3,7 +3,7 @@
 /*Aparelho em pé ("portrait").*/
 
 body {
-	background-image: url('../../Imagens/p1.png');
+	background-image: url('../Imagens/cev-portrait.jpg');
 	background-size: cover;
 	/*background-position: left bottom; -> Apenas para acompanhar a aula. - Pesquisar.*/
 }
