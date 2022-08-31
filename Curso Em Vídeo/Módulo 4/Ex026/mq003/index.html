@@ -4,22 +4,59 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Media Query</title>
-	
-	<link rel="stylesheet" type="text/css" href="Estilos/tela.css" media="all">
-	<link rel="stylesheet" type="text/css" href="Estilos/retrato.css" media="screen and (orientation: portrait)">
-	<link rel="stylesheet" type="text/css" href="Estilos/paisagem.css" media="screen and (orientation: landscape)">
+
+	<style type="text/css">
+		
+		/*Media All:*/
+
+		@media all {
+			* {
+				margin: 0px;
+				padding: 0px;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+
+			html, body {
+				width: 100vw;
+				height: 100vh;
+				background-color: #233eff;
+				background-size: contain; /*Pesquisar.*/
+				background-repeat: no-repeat;
+			}
+
+			h1 {
+				color: white;
+				text-shadow: 2px 2px 0px #1526a7;
+				padding: 10px;
+			}
+		}
+
+		/*Retrato:*/
+
+		@media screen and (orientation: portrait) {
+			body {
+				background-image: url('./Imagens/cev-portrait.jpg');
+				background-position: center bottom;
+			}
+		}
+
+		/*Paisagem:*/
+
+		@media screen and (orientation: landscape) {
+			body {
+				background: url('./Imagens/cev-landscape.jpg');
+				background-position: left bottom;
+			}	
+		}
+
+		/*Caso seja de interesse, todo o conteúdo CSS acima pode ser posto em um único documento CSS;*/
+		/*E aqui usado através de um CSS externo (através da "tag 'link-css'").*/
+
+	</style>
 
 </head>
 
 <body>
-	
-	<!--As "Media Queries" englobam tanto as "media types" quanto as "media features".-->
-	<!--As "media types" dizem respeito ao tipo de media à qual o CSS será destinado;-->
-	<!--As "media features" dizem respeito às características desse CSS específico;-->
-	<!--Já o CSS com o tipo "media all" terá o seu CSS destinado a todos os dispositivos/medias.-->
-
-	<!--Dentro do atributo "media", se pode declarar as especificações do dispositivo.-->
-	<!--"media features" vão entre parênteses; "media types" não.-->
 
 	<h1>Mude a Orientação Do Seu Dispositivo</h1>
 
